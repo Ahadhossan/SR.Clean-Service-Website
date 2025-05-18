@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#fff] text-gray-300 font-inter;
+}
+
+
+@layer components {
+  .sub-menu {
+    @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-[#0A2B42];
+  }
+}
+
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center;
+  }
+
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+
+}
+
+.hero-bg {
+  background: linear-gradient(
+      rgb(14, 101, 177),
+      rgba(45, 134, 212, 0.9),
+      rgb(19, 121, 211)
+    ),
+    url('../src/assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-bg{
+  background: linear-gradient(
+      rgba(248, 246, 246, 0.5),
+      rgba(247, 249, 250, 0.9),
+      rgba(241, 245, 250, 0.849)
+    ),
+    url('../src/assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
